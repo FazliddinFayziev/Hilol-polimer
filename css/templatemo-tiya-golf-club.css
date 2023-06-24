@@ -669,7 +669,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('https://suntexcp.com/wp-content/uploads/2019/03/pbl6_guttervent.jpg');
+  background-image: url('https://res.cloudinary.com/dip5rm08k/image/upload/v1687583764/poli-5_1_ifiakp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -721,7 +721,7 @@ strong {
   BACKGROUND IMAGE SECTION        
 -----------------------------------------*/
 .section-bg-image {
-  background-image: url('https://cdn.27.ua/sc--media--prod/default/28/d9/5b/28d95b07-c3d8-4d6b-8741-3ccd195f4be0.jpg');
+  background-image: url('https://res.cloudinary.com/dip5rm08k/image/upload/v1687583769/poli-6_1_lv7ked.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -958,60 +958,78 @@ strong {
 
 
 /*---------------------------------------
-  MEMBERSHIP SECTION            
+  OUR PRODUCTS SECTION            
 -----------------------------------------*/
-.membership-section .container {
-  position: relative;
-  z-index: 2;
+#header {
+  margin: 20px;
 }
 
-.table-responsive {
-  border-radius: var(--border-radius-medium);
+#header>h1 {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.table-responsive tbody,
-.table-responsive td,
-.table-responsive tfoot,
-.table-responsive th,
-.table-responsive thead,
-.table-responsive tr {
-  border: 0;
+#header>p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
-.table-responsive thead tr {
+.container-product {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 60px;
+}
+
+.card-image {
+  width: 400px;
+  height: 250px;
+}
+
+.card-image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px auto;
+  margin-bottom: -50px;
+  height: 180px;
+  width: 300px;
   background-color: var(--secondary-color);
-  color: var(--white-color);
+  color: #fff;
+  padding: 20px;
 }
 
-.table-responsive thead th {
-  padding: 22px 16px !important;
+.card-meal-type {
+  font-style: italic;
 }
 
-.table-responsive tbody tr:nth-child(even) {
-  background-color: var(--section-bg-color);
+.card-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
-.table>:not(caption)>*>* {
-  padding: 18px 16px;
-}
-
-.table-responsive .bi-check-circle-fill {
-  color: var(--primary-color);
-}
-
-.table-responsive .bi-x-circle-fill {
-  color: var(--custom-btn-bg-hover-color);
-}
-
-.membership-form {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-medium);
-  padding: 35px;
-}
-
-.membership-form .form-floating>textarea {
-  border-radius: var(--border-radius-medium);
-  height: 100px;
+.card-body {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -1069,6 +1087,7 @@ strong {
 .site-footer {
   position: relative;
   padding-bottom: 200px;
+  margin-top: 50px;
 }
 
 .site-footer .container {
@@ -1303,6 +1322,49 @@ strong {
 
   .contact-info-item {
     width: 72%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 60px;
+  }
+
+  .card-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  .card-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -30px auto;
+    margin-bottom: -50px;
+    height: 150px;
+    width: 200px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+  }
+
+  .card-meal-type {
+    font-style: italic;
+  }
+
+  .card-body {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
